@@ -4,7 +4,9 @@
 ### Нормативные документы:
 - https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/nd.md
 
-### Пример 1
+### Пример 
 Данные взяты из https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/f072/server.md 
+
+#### Example 1
 
 https://bpmbpm.github.io/Form072/
