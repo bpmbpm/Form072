@@ -1,3 +1,10 @@
 ### Вокруг 072 формы
+Форма 0409072 — «Сведения о показателях операционной надёжности кредитной организации и применяемых ею информационных технологиях при осуществлении банковской деятельности и деятельности в сфере финансовых рынков»
+
+### Нормативные документы:
+- https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/nd.md
+
+### Пример 1
+Данные взяты из https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/f072/server.md 
 
 https://bpmbpm.github.io/Form072/
