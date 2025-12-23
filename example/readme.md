@@ -1,7 +1,11 @@
 ## Example 
 ## 1 Easy
+Особенности: 
+- Данные взяты из https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/f072/server.md  
+- Упрощено, включая, минимазацию компонентов, отказ от виртуализациии и т.п.
+ 
 ### 1.1 fragment of process TprKO6
-ТпрКО6 - открытие и ведение счетов ФЛ. Данные из https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/f072/server.md
+ТпрКО6 - открытие и ведение счетов ФЛ. 
 ```
 const CONFIG = {
 Settings: {
