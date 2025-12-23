@@ -120,7 +120,7 @@ graph LR;
 CRM_ЮЛ --> АБС <--> Credit_ЮЛ;
 CRM_ФЛ --> АБС;
 ```
-
+- [mermaid.live/edit](https://mermaid.live/edit#pako:eNpVUEFOwzAQ_Iq15zTKOo2dGMQlPdJLj8gSsrDbRGrsyHUkIMof4MwJiTNvyZNwgorEbXd2ZnZ3Rnhy2oCAk1d9Q-4PN9LWh_3j_D1_kM3mjsxv8_v8SW6XuvZGt2GdXWlf_2gRlRaSaNZqEMEPJoHO-E4tLYzSEiIhNKYzEkQstTmq4RwkSDtFWa_sg3PdVendcGpAHNX5Eruh1yqYXavipd0f6o3VxtdusAEEYrmagBjhGUReYcq3WGw5YzxHigm8RBLDNK8KigXDoqQ4JfC6Ls1SlnHGOWY0K8uKljSB5V_n978RrUlNPwouZTU)
 ``` mermaid
 graph LR;
 ТпрКО6 --> АБС_ЦФТ(АБС ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС_ЦФТ:Арх3.3((Арх3.3)) --> АБС_ЦФТ:Арх3.3:software((software)) --> АБС_ЦФТАрх3.3Прикладное_ПО:_ЦФТ-Банк_Платформы_2MCA_DBI:Ри2([Прикладное ПО: ЦФТ-Банк Платформы 2MCA DBI<br>2.9.3<br>АО ЦФТ, 810]) 
