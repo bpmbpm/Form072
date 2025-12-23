@@ -110,9 +110,115 @@ CRM --> АБС1_ЦФТ
 ## 2 TprKO6 + TprKO3 
 Добавим простой вариант **ТПрКО3** Технологический процесс, обеспечивающий размещение привлеченных во вклады денежных средств физических и (или) юридических лиц от своего имени и за свой счет  
 в виде кредитного конвеера ЮЛ и CRM ЮЛ
-### 2.1 
+### 2.1 TprKO6 + TprKO3, no link
 
-### 2.2 Comment
+
+### 2.2 TprKO6 + TprKO3, link
+``` mermaid
+graph LR;
+ТпрКО6 --> АБС_ЦФТ(АБС ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС_ЦФТ:Арх3.3((Арх3.3)) --> АБС_ЦФТ:Арх3.3:software((software)) --> АБС_ЦФТАрх3.3Прикладное_ПО:_ЦФТ-Банк_Платформы_2MCA_DBI:Ри2([Прикладное ПО: ЦФТ-Банк Платформы 2MCA DBI<br>2.9.3<br>АО ЦФТ, 810]) 
+CRM_ФЛ -. source .-> АБС_ЦФТ
+CRM_ЮЛ -. source .-> АБС_ЦФТ
+АБС_ЦФТ -. target .-> Кредиты_ЮЛ
+ТпрКО6 --> АБС_ЦФТ(АБС ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС_ЦФТ:Арх3.3((Арх3.3)) --> АБС_ЦФТ:Арх3.3:software((software)) --> АБС_ЦФТАрх3.3Сервер_приложений:_Apache_Tomcat:Ри2([Сервер приложений: Apache Tomcat<br>9.0.85<br>Apache Software Foundation, 840]) 
+CRM_ФЛ -. source .-> АБС_ЦФТ
+CRM_ЮЛ -. source .-> АБС_ЦФТ
+АБС_ЦФТ -. target .-> Кредиты_ЮЛ
+ТпрКО6 --> АБС_ЦФТ(АБС ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС_ЦФТ:Арх3.3((Арх3.3)) --> АБС_ЦФТ:Арх3.3:software((software)) --> АБС_ЦФТАрх3.3Среда_исполнения:_Oracle_JDK_:Ри2([Среда исполнения: Oracle JDK <br>17.0.11<br>Oracle Inc., 840]) 
+CRM_ФЛ -. source .-> АБС_ЦФТ
+CRM_ЮЛ -. source .-> АБС_ЦФТ
+АБС_ЦФТ -. target .-> Кредиты_ЮЛ
+ТпрКО6 --> АБС_ЦФТ(АБС ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС_ЦФТ:Арх3.3((Арх3.3)) --> АБС_ЦФТ:Арх3.3:software((software)) --> АБС_ЦФТАрх3.3Системное_ПО,_ОС:_Ред_ОС_Сервер:Ри2([Системное ПО, ОС: Ред ОС Сервер<br>10.2<br>ООО «Ред Софт», 810]) 
+CRM_ФЛ -. source .-> АБС_ЦФТ
+CRM_ЮЛ -. source .-> АБС_ЦФТ
+АБС_ЦФТ -. target .-> Кредиты_ЮЛ
+ТпрКО6 --> АБС_ЦФТ(АБС ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС_ЦФТ:Арх3.3((Арх3.3)) --> АБС_ЦФТ:Арх3.3:hardware((hardware)) --> АБС_ЦФТАрх3.3Оборудование,_сервер:_Aquarius_C86_:Ри2([Оборудование, сервер: Aquarius C86 <br>T1F S28H<br>ГК «Аквариус», 810]) 
+CRM_ФЛ -. source .-> АБС_ЦФТ
+CRM_ЮЛ -. source .-> АБС_ЦФТ
+АБС_ЦФТ -. target .-> Кредиты_ЮЛ
+ТпрКО6 --> АБС_ЦФТ(АБС ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС_ЦФТ:Арх3.2((Арх3.2)) --> АБС_ЦФТ:Арх3.2:software((software)) --> АБС_ЦФТАрх3.2СУБД:_Postgres_Pro_Enterprise:Ри2([СУБД: Postgres Pro Enterprise<br>15.6.1<br>ООО «Постгрес Про», 810]) 
+CRM_ФЛ -. source .-> АБС_ЦФТ
+CRM_ЮЛ -. source .-> АБС_ЦФТ
+АБС_ЦФТ -. target .-> Кредиты_ЮЛ
+ТпрКО6 --> АБС_ЦФТ(АБС ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС_ЦФТ:Арх3.2((Арх3.2)) --> АБС_ЦФТ:Арх3.2:software((software)) --> АБС_ЦФТАрх3.2Системное_ПО,_ОС:_Ред_ОС_Сервер:Ри2([Системное ПО, ОС: Ред ОС Сервер<br>10.2<br>ООО «Ред Софт», 810]) 
+CRM_ФЛ -. source .-> АБС_ЦФТ
+CRM_ЮЛ -. source .-> АБС_ЦФТ
+АБС_ЦФТ -. target .-> Кредиты_ЮЛ
+ТпрКО6 --> АБС_ЦФТ(АБС ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС_ЦФТ:Арх3.2((Арх3.2)) --> АБС_ЦФТ:Арх3.2:hardware((hardware)) --> АБС_ЦФТАрх3.2Оборудование_сервера:_Aquarius_C86_:Ри2([Оборудование сервера: Aquarius C86 <br>T1F D88<br>ГК «Аквариус», 810]) 
+CRM_ФЛ -. source .-> АБС_ЦФТ
+CRM_ЮЛ -. source .-> АБС_ЦФТ
+АБС_ЦФТ -. target .-> Кредиты_ЮЛ
+ТпрКО6 --> CRM_ФЛ(CRM ФЛ<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM_ФЛ:Арх3.3((Арх3.3)) --> CRM_ФЛ:Арх3.3:software((software)) --> CRM_ФЛАрх3.3Прикладное_ПО:_Creatio:Ри2([Прикладное ПО: Creatio<br>8.0.9<br>Creatio / Terrasoft, 840]) 
+CRM_ФЛ -. target .-> АБС_ЦФТ
+ТпрКО6 --> CRM_ФЛ(CRM ФЛ<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM_ФЛ:Арх3.3((Арх3.3)) --> CRM_ФЛ:Арх3.3:software((software)) --> CRM_ФЛАрх3.3Среда_исполнения:_.NET:Ри2([Среда исполнения: .NET<br>8.0.6<br>Microsoft, 840]) 
+CRM_ФЛ -. target .-> АБС_ЦФТ
+ТпрКО6 --> CRM_ФЛ(CRM ФЛ<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM_ФЛ:Арх3.3((Арх3.3)) --> CRM_ФЛ:Арх3.3:software((software)) --> CRM_ФЛАрх3.3Веб-сервер:_Internet_Information_Services,_IIS:Ри2([Веб-сервер: Internet Information Services, IIS<br>10.0<br>Microsoft, 840]) 
+CRM_ФЛ -. target .-> АБС_ЦФТ
+ТпрКО6 --> CRM_ФЛ(CRM ФЛ<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM_ФЛ:Арх3.3((Арх3.3)) --> CRM_ФЛ:Арх3.3:software((software)) --> CRM_ФЛАрх3.3Системное_ПО,_ОС:_Microsoft_Windows_Server_2022:Ри2([Системное ПО, ОС: Microsoft Windows Server 2022<br>Standard<br>Microsoft, 840]) 
+CRM_ФЛ -. target .-> АБС_ЦФТ
+ТпрКО6 --> CRM_ФЛ(CRM ФЛ<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM_ФЛ:Арх3.3((Арх3.3)) --> CRM_ФЛ:Арх3.3:hardware((hardware)) --> CRM_ФЛАрх3.3Оборудование_сервера:_Dell_PowerEdge:Ри2([Оборудование сервера: Dell PowerEdge<br>R760<br>Dell Inc., 840]) 
+CRM_ФЛ -. target .-> АБС_ЦФТ
+ТпрКО6 --> CRM_ФЛ(CRM ФЛ<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM_ФЛ:Арх3.2((Арх3.2)) --> CRM_ФЛ:Арх3.2:software((software)) --> CRM_ФЛАрх3.2СУБД:_Microsoft_SQL_Server_2022:Ри2([СУБД: Microsoft SQL Server 2022<br>Enterprise Edition<br>Microsoft, 840]) 
+CRM_ФЛ -. target .-> АБС_ЦФТ
+ТпрКО6 --> CRM_ФЛ(CRM ФЛ<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM_ФЛ:Арх3.2((Арх3.2)) --> CRM_ФЛ:Арх3.2:software((software)) --> CRM_ФЛАрх3.2Системное_ПО,_ОС:_Microsoft_Windows_Server_2022:Ри2([Системное ПО, ОС: Microsoft Windows Server 2022<br>Datacenter<br>Microsoft, 810]) 
+CRM_ФЛ -. target .-> АБС_ЦФТ
+ТпрКО6 --> CRM_ФЛ(CRM ФЛ<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM_ФЛ:Арх3.2((Арх3.2)) --> CRM_ФЛ:Арх3.2:hardware((hardware)) --> CRM_ФЛАрх3.2Оборудование_сервера:_Dell_PowerEdge:Ри2([Оборудование сервера: Dell PowerEdge<br>R760xd<br>Dell Inc., 840]) 
+CRM_ФЛ -. target .-> АБС_ЦФТ
+ТпрКО3 --> CRM_ЮЛ(CRM ЮЛ<br>CRM ЮЛ банка, Creatio / Terrasoft) --> CRM_ЮЛ:Арх3.3((Арх3.3)) --> CRM_ЮЛ:Арх3.3:software((software)) --> CRM_ЮЛАрх3.3Прикладное_ПО:_Creatio:Ри2([Прикладное ПО: Creatio<br>8.0.9<br>Creatio / Terrasoft, 840]) 
+CRM_ЮЛ -. target .-> АБС_ЦФТ
+CRM_ЮЛ -. target .-> Кредиты_ЮЛ
+ТпрКО3 --> CRM_ЮЛ(CRM ЮЛ<br>CRM ЮЛ банка, Creatio / Terrasoft) --> CRM_ЮЛ:Арх3.3((Арх3.3)) --> CRM_ЮЛ:Арх3.3:software((software)) --> CRM_ЮЛАрх3.3Среда_исполнения:_.NET:Ри2([Среда исполнения: .NET<br>8.0.6<br>Microsoft, 840]) 
+CRM_ЮЛ -. target .-> АБС_ЦФТ
+CRM_ЮЛ -. target .-> Кредиты_ЮЛ
+ТпрКО3 --> CRM_ЮЛ(CRM ЮЛ<br>CRM ЮЛ банка, Creatio / Terrasoft) --> CRM_ЮЛ:Арх3.3((Арх3.3)) --> CRM_ЮЛ:Арх3.3:software((software)) --> CRM_ЮЛАрх3.3Веб-сервер:_Internet_Information_Services,_IIS:Ри2([Веб-сервер: Internet Information Services, IIS<br>10.0<br>Microsoft, 840]) 
+CRM_ЮЛ -. target .-> АБС_ЦФТ
+CRM_ЮЛ -. target .-> Кредиты_ЮЛ
+ТпрКО3 --> CRM_ЮЛ(CRM ЮЛ<br>CRM ЮЛ банка, Creatio / Terrasoft) --> CRM_ЮЛ:Арх3.3((Арх3.3)) --> CRM_ЮЛ:Арх3.3:software((software)) --> CRM_ЮЛАрх3.3Системное_ПО,_ОС:_Microsoft_Windows_Server_2022:Ри2([Системное ПО, ОС: Microsoft Windows Server 2022<br>Standard<br>Microsoft, 840]) 
+CRM_ЮЛ -. target .-> АБС_ЦФТ
+CRM_ЮЛ -. target .-> Кредиты_ЮЛ
+ТпрКО3 --> CRM_ЮЛ(CRM ЮЛ<br>CRM ЮЛ банка, Creatio / Terrasoft) --> CRM_ЮЛ:Арх3.3((Арх3.3)) --> CRM_ЮЛ:Арх3.3:hardware((hardware)) --> CRM_ЮЛАрх3.3Оборудование_сервера:_Dell_PowerEdge:Ри2([Оборудование сервера: Dell PowerEdge<br>R760<br>Dell Inc., 840]) 
+CRM_ЮЛ -. target .-> АБС_ЦФТ
+CRM_ЮЛ -. target .-> Кредиты_ЮЛ
+ТпрКО3 --> CRM_ЮЛ(CRM ЮЛ<br>CRM ЮЛ банка, Creatio / Terrasoft) --> CRM_ЮЛ:Арх3.2((Арх3.2)) --> CRM_ЮЛ:Арх3.2:software((software)) --> CRM_ЮЛАрх3.2СУБД:_Microsoft_SQL_Server_2022:Ри2([СУБД: Microsoft SQL Server 2022<br>Enterprise Edition<br>Microsoft, 840]) 
+CRM_ЮЛ -. target .-> АБС_ЦФТ
+CRM_ЮЛ -. target .-> Кредиты_ЮЛ
+ТпрКО3 --> CRM_ЮЛ(CRM ЮЛ<br>CRM ЮЛ банка, Creatio / Terrasoft) --> CRM_ЮЛ:Арх3.2((Арх3.2)) --> CRM_ЮЛ:Арх3.2:software((software)) --> CRM_ЮЛАрх3.2Системное_ПО,_ОС:_Microsoft_Windows_Server_2022:Ри2([Системное ПО, ОС: Microsoft Windows Server 2022<br>Datacenter<br>Microsoft, 810]) 
+CRM_ЮЛ -. target .-> АБС_ЦФТ
+CRM_ЮЛ -. target .-> Кредиты_ЮЛ
+ТпрКО3 --> CRM_ЮЛ(CRM ЮЛ<br>CRM ЮЛ банка, Creatio / Terrasoft) --> CRM_ЮЛ:Арх3.2((Арх3.2)) --> CRM_ЮЛ:Арх3.2:hardware((hardware)) --> CRM_ЮЛАрх3.2Оборудование_сервера:_Dell_PowerEdge:Ри2([Оборудование сервера: Dell PowerEdge<br>R760xd<br>Dell Inc., 840]) 
+CRM_ЮЛ -. target .-> АБС_ЦФТ
+CRM_ЮЛ -. target .-> Кредиты_ЮЛ
+ТпрКО3 --> Кредиты_ЮЛ(Кредиты ЮЛ<br>Кредитный конвейер ЮЛ банка, Интегратор 1) --> Кредиты_ЮЛ:Арх3.3((Арх3.3)) --> Кредиты_ЮЛ:Арх3.3:software((software)) --> Кредиты_ЮЛАрх3.3Прикладное_ПО:_ELMA_BPM_Suite_Enterprise:Ри2([Прикладное ПО: ELMA BPM Suite Enterprise<br>4.2.10.55<br>ELMA, 810]) 
+АБС_ЦФТ -. source .-> Кредиты_ЮЛ
+Кредиты_ЮЛ -. target .-> АБС_ЦФТ
+ТпрКО3 --> Кредиты_ЮЛ(Кредиты ЮЛ<br>Кредитный конвейер ЮЛ банка, Интегратор 1) --> Кредиты_ЮЛ:Арх3.3((Арх3.3)) --> Кредиты_ЮЛ:Арх3.3:software((software)) --> Кредиты_ЮЛАрх3.3Среда_исполнения:_.NET_Core_Runtime:Ри2([Среда исполнения: .NET Core Runtime<br>8.0.6<br>Microsoft, 840]) 
+АБС_ЦФТ -. source .-> Кредиты_ЮЛ
+Кредиты_ЮЛ -. target .-> АБС_ЦФТ
+ТпрКО3 --> Кредиты_ЮЛ(Кредиты ЮЛ<br>Кредитный конвейер ЮЛ банка, Интегратор 1) --> Кредиты_ЮЛ:Арх3.3((Арх3.3)) --> Кредиты_ЮЛ:Арх3.3:software((software)) --> Кредиты_ЮЛАрх3.3Веб-сервер:_Internet_Information_Services,_IIS:Ри2([Веб-сервер: Internet Information Services, IIS<br>10.0<br>Microsoft, 840]) 
+АБС_ЦФТ -. source .-> Кредиты_ЮЛ
+Кредиты_ЮЛ -. target .-> АБС_ЦФТ
+ТпрКО3 --> Кредиты_ЮЛ(Кредиты ЮЛ<br>Кредитный конвейер ЮЛ банка, Интегратор 1) --> Кредиты_ЮЛ:Арх3.3((Арх3.3)) --> Кредиты_ЮЛ:Арх3.3:software((software)) --> Кредиты_ЮЛАрх3.3Системное_ПО,_ОС:_Microsoft_Windows_Server_2022:Ри2([Системное ПО, ОС: Microsoft Windows Server 2022<br>Standard<br>Microsoft, 840]) 
+АБС_ЦФТ -. source .-> Кредиты_ЮЛ
+Кредиты_ЮЛ -. target .-> АБС_ЦФТ
+ТпрКО3 --> Кредиты_ЮЛ(Кредиты ЮЛ<br>Кредитный конвейер ЮЛ банка, Интегратор 1) --> Кредиты_ЮЛ:Арх3.3((Арх3.3)) --> Кредиты_ЮЛ:Арх3.3:hardware((hardware)) --> Кредиты_ЮЛАрх3.3Оборудование_сервера:_Dell_PowerEdge:Ри2([Оборудование сервера: Dell PowerEdge<br>R760<br>Dell Inc., 840]) 
+АБС_ЦФТ -. source .-> Кредиты_ЮЛ
+Кредиты_ЮЛ -. target .-> АБС_ЦФТ
+ТпрКО3 --> Кредиты_ЮЛ(Кредиты ЮЛ<br>Кредитный конвейер ЮЛ банка, Интегратор 1) --> Кредиты_ЮЛ:Арх3.2((Арх3.2)) --> Кредиты_ЮЛ:Арх3.2:software((software)) --> Кредиты_ЮЛАрх3.2СУБД:_Microsoft_SQL_Server_2022:Ри2([СУБД: Microsoft SQL Server 2022<br>Enterprise Edition<br>Microsoft, 840]) 
+АБС_ЦФТ -. source .-> Кредиты_ЮЛ
+Кредиты_ЮЛ -. target .-> АБС_ЦФТ
+ТпрКО3 --> Кредиты_ЮЛ(Кредиты ЮЛ<br>Кредитный конвейер ЮЛ банка, Интегратор 1) --> Кредиты_ЮЛ:Арх3.2((Арх3.2)) --> Кредиты_ЮЛ:Арх3.2:software((software)) --> Кредиты_ЮЛАрх3.2Системное_ПО,_ОС:_Microsoft_Windows_Server_2022:Ри2([Системное ПО, ОС: Microsoft Windows Server 2022<br>Datacenter<br>Microsoft, 810]) 
+АБС_ЦФТ -. source .-> Кредиты_ЮЛ
+Кредиты_ЮЛ -. target .-> АБС_ЦФТ
+ТпрКО3 --> Кредиты_ЮЛ(Кредиты ЮЛ<br>Кредитный конвейер ЮЛ банка, Интегратор 1) --> Кредиты_ЮЛ:Арх3.2((Арх3.2)) --> Кредиты_ЮЛ:Арх3.2:hardware((hardware)) --> Кредиты_ЮЛАрх3.2Оборудование_сервера:_Dell_PowerEdge:Ри2([Оборудование сервера: Dell PowerEdge<br>R760xd<br>Dell Inc., 840]) 
+АБС_ЦФТ -. source .-> Кредиты_ЮЛ
+Кредиты_ЮЛ -. target .-> АБС_ЦФТ
+```
+
+- [mermaid.live](https://mermaid.live/view#pako:eNrtW11PG0cU_StX-2Qks_WusbG3VSSCiUoTWoqRKrWuRlt7MJZgl47XTdooUiDpEw-hHw9VKpGQVn2pZDlpqaAkRMovmP1HvTO7628vNirBJiska3Z9z_Xcc-7cmes1d5WiXaKKoZSZubUOt1beL1j8GX_t3ueP-X4apqevAd_jP_ADwv_gv_NnMe8KvKsPvmLX-L67zV_xU_4CXxvuIwgsnvMG3vmXN-Li1r7vYKrXp8H33Pvu90k1GYs1h1OhhkbVXnNum4zGYsGoH6Bpz59gREc4mROc1N9yuoeEP-H7hm85jSg5XXEXjdwd9yE_RdBLd5foS_NzJHd90eBP-ZEe-6KfN5DeoMsb9HoD4Q3QmyBPV7NqUrKIDPngOGS0xJdTULDmV5YI3vkVplWo2jVWpKB2h-hb1c-y6rgUpo7JytTxTB_j1A4xkiOc6K50dkXT4IAfYkwvxCuR4R2hPKf8H4z-FY6PDTK3ZRbXKVm1N4um0xS8DQd9ceDhwMMJQrJqQs2kxMh_K-_PEG7YNatkOhXbQqlnIqkvSGo_0AbBWLf5a5zvCc5OCuY-MsgnzCxuUPJR7iZpyRxgoC8GPAwgBgQR2ixqrGli6L-zaBXVSNSLXL-oi7uDwb5sK-Jxwvf5AZbyp4IFeUHal2zbMu6Cy6qNgQk4eHB5Ae1wKXVC1T2axB-8-TMwPsC6_tDdeXMSle3hZV83WcmTPRiFy76P08Ht032AwYqpNmTVPYwTnHxLZTL3dc1klVqVzGfSrUU9CAwdYAjAgGC5ule1G5DXMx9Kmn7ij4Xoe8gIehAbgPvA3Y5UV_WW6nqo6vqIi13HpfUb3v_ZIMt21SkzWiXLzCYLlkPZFqtUaduy9gwhMAQ0hJahXMApNa1qnUv4CeaFKAd_CUbdbZDnutNI1IsVNargV0D20Sq4PqgIdxRw3hixhEMXun8Nz2Uyk1jCg8nEcABiIIIIxh3qzjMqugl4D1YpY6ZYh1MdLsK26F6bwUs6sB2mrfYnNUTL7FuK8DJ4ns7KOHtD6n-sbme1S4BJ5POspkX9eGF16G5FGAespsVgqVJk9jvD5Y_IxPPpzhPiojgTWNTBwZrNNmUTTvKUfVMp0mqcLC7mm-z2gUMAhzY4NOGAcH-nSbx7dIdv7E0uyGcVq2TfrkrWKSN6QteH3N2bPsD3AZ4PED4EJXnHtEq4HV0R8gfusb3kD7u95ujGBh6nb1O2UCrTkfdXAYcmXBCxMpuWuS7fGfztx-XS3edc02szfK63dSattM5_emtASvu9SSt70bQ7c1u9CiyUKqKsjH0OXwCpl15AcqZjFqnQopt-bTLpH7qE6JdbQu6U_qcikmxFVw8Ir7cRXh-J8PoQNbs-woZZH4-zc_0sPgdZhfctE8T95ZyzI97H9kweSTMh5_crKlT4Rl2fiLP-xEkz6AxVH-EIWx-jviASYGJ6iCsq1dBlbKz7jQsVp49RrPNeU7L22_yVu8uPAWU7xUgxPH7s_RqpW1L-C5qK7BVPNRs4QpZAmxr02aGP78PMQ5789cKG6XoWbi3NkevLSyRfqzi033PewX2QwAJiQWK7Hv3OqLqK57-U_DGWsGytxZ6nNO0PdPqq2XtztNb0HZd_mMaLzNuMkpWa5VQ26UhdGAgk-MizWrJI-7es_Tg2f1ESvO0CMPZtZpQS506Jwb8KCUuJcWxooyQI-1FQmPm56sJlts6R1G9d6vFv0qOkOHdSnGcTGNevAy46DZS4UmaVkmI4rEbjyibFM6y4VO4WLICC4qzTTVpQDByW6JpZ23AKSsG6h7At0_rctjcDJLNr5XXFWDM3qnhV2yqZDs1VzDIzWybUKlE2b2N3pBjZpHShGHeVO4qhZRNqNqknUplkQtOyKS2ufKsY09nZlJpMzcwkZnQ9k9Uzs_fiynfyQzU1k8jOJmezqUQyk0pn03GFYpG12ZL374Tyvwrv_QfIu3ft)
+
+- [edit](https://mermaid.live/edit#pako:eNrtW11PG0cU_StX-2Qks_WusbG3VSSCiUoTWoqRKrWuRlt7MJZgl47XTdooUiDpEw-hHw9VKpGQVn2pZDlpqaAkRMovmP1HvTO7628vNirBJiska2Z8z3juOXfuzPWau0rRLlHFUMrM3FqHWyvvFyz-jL927_PHfD8N09PXgO_xH_gB4X_w3_mzmNcDr_fBV-wa33e3-St-yl_ga8N9BIHFc97AkX95Iy6G9v0JpnrnNPiee9_9PqkmY7FmcyrU0Kjaa85tk9FYLGj1AzTt-RP06AgXc4KL-lsu95DwJ3zf8C2nESWXK0bRyN1xH_JTBL10d4m-ND9HctcXDf6UH-mxL_rNBnI26JoNemcDMRvgbII8Xc2qSckiMuSD45DREl9OQcGaX1kiOPIrTKtQtWusSEHtdtG3qp9l1dEVpo7JytTxTB_j0g7RkyNc6K6c7IqGwQE_RJ9eiFci3TtCeU75P-j9K2wfG2RuyyyuU7JqbxZNpyl4Gw764sDDgYcThGTVhJpJiZb_Vt5fIdywa1bJdCq2hVLPRFJfkNS-ow2Cvm7z17jeE1ydFMx9ZJBPmFncoOSj3E3SkjnAQF8MeBhADAgitFnUWNNE039n0SqqkagXuX9RF3cHnX3ZlsTjhO_zA0zlTwULskPat2zbNu6Cy6yNjgk4eHDZgXa4lDqh6h5N4g_e_BkYH2Bef-juvDmJ0vbwsq-brOTJHrTCZd_H5eDx6T5AZ8VSGzLrHsYJLr6lMpn7umaySq1K5jPp1qYeBIYOMARgQLDc3avaDcjrmQ8lTT_xx0L0PWQEZxAHgPvA3Y5UV_WW6nqo6vqIm13HrfUbjv9skGW76pQZrZJlZpMFy6Fsi1WqtG1be4YQGAIaQstQbuCUmla1zi38BONCpIO_BKPuNsh73Wkk6sWKGmXwKyD7aBlcH5SEOxI4b4yYwqEL3T-H5zKZSUzhwWJi2ADREE4E7Q515xkV1QS8B6uUMVPsw6mOKcKO6F6bwVs6sB2mrPYXNUTJ7FsK9zJ4n85KP3td6n-tbme1S4BJ5POsokX9eGF16GpFGAespkVjqVJk9jvD5Y_IxPPpzhviorgTWNTBxprNNmURTvKUfVMp0mqcLC7mm-z2gUMAhzY4NOGAcP-kSbx7dIcf7E0uyGcVq2TfrkrWKSN6QteHPN2bc4A_B3hzgJhDUJJ3TKuEx9EVIX_gGdtL_rDHa45ubOB1-jZlC6UyHfl8FXBowgURK7NpGevyncHfflwu3X3uNb02w8d6W2XSCuv8p7cGhLRfm7SiF027I7dVq8BCqSLSytjH8AWQeukJJGc6ZpEKLbrp1yaT_qFTiH65KeRO6X9KIsmWd_WA8Hob4fWRCK8PkbPrIxyY9fG4O9fP4nOQVXjdMkHcX849O-J9bO_kkTQTcn-_okKFH9T1ibjrT5w0g-5Q9RGusPUxqgsiASamhriiUg2dxsa63rhQcfoYxTrHmpK1D_NX7i4_BpTtFD1F9_ix92ukbkn5L2gqolc81WxgC1kCbWrQZ4c-vg8zD3ny1wsbpupZuLU0R64vL5F8reLQfs95B9dBAguIBYntevQ7o-oq3v9S8sdYwrK1F3ue0rQ_0OmrZu_gaKXpOy7_MIUXmbcZJSs1y6ls0pGqMBBI8JFnlWSR9m9Z-3Es_qIgeNsJYOzLzCgkzh0Sg38VEhYS41jQRkEQ9qOgMPNz5YXLLJ0jqd-61ONfpEdBce6gOM8hMK5fB1x0GChxpcwqJcVwWI3GlU2Kd1jRVe4WLICC4qzTTVpQDGyW6JpZ23AKSsG6h7At0_rctjcDJLNr5XXFWDM3qtirbZVMh-YqZpmZLRNqlSibt7E6UgwtJadQjLvKHexpKVVL6slsNqPNZLOpxGxc-VYxpjOJlJrQUklN01NpLa2l7sWV7-SnYkWtJRKJ5ExyJpGaTaZnEUExzdpsyfuHQvl_hff-A6kveB0)
+
+### 2.3 Comment
 К избыточности формата:
 - Если мы хотим добавить на схему, например, [ТПрКО7](https://ivo.garant.ru/#/document/406750235/entry/100900/doclist/1821/1/0/0/6406-%D0%A3:0) Технологический процесс, обеспечивающий открытие и ведение банковских счетов юридических лиц, то нужно добавлять еще десяток строк, хотя все данные (системы) на схеме уже есть (CRM ЮЛ + АБС). Кроме чудовищной избыточности это ничего не даст.
 - Если мы хотим добавить Типовое рабочее место Сотрудника банка с установленным на нем "клиентской частью" CRM, АБС, то нам нужно отдельными строчками (арх-строками) добавлять его в Каждую АС (например, в трехзвенной архитектуре как Арх3.1 - браузер, системное ПО, оборудование ПК) 
