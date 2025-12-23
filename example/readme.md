@@ -46,8 +46,40 @@ sysSourceTarget: 'no'
 ### 1.3 TprKO6, link
 Процесс ТпрКО6 - с взаимосвязью систем (АС), т.е. sysSourceTarget: 'yes' 
 
-```
-
+``` mermaid
+graph LR;
+ТпрКО6 --> АБС1_ЦФТ(АБС1 ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС1_ЦФТ:Арх3.3((Арх3.3)) --> АБС1_ЦФТ:Арх3.3:software((software)) --> АБС1_ЦФТАрх3.3Прикладное_ПО:_ЦФТ-Банк_Платформы_2MCA_DBI:Ри2([Прикладное ПО: ЦФТ-Банк Платформы 2MCA DBI<br>2.9.3<br>АО ЦФТ, 810]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> АБС1_ЦФТ(АБС1 ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС1_ЦФТ:Арх3.3((Арх3.3)) --> АБС1_ЦФТ:Арх3.3:software((software)) --> АБС1_ЦФТАрх3.3Сервер_приложений:_Apache_Tomcat:Ри2([Сервер приложений: Apache Tomcat<br>9.0.85<br>Apache Software Foundation, 840]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> АБС1_ЦФТ(АБС1 ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС1_ЦФТ:Арх3.3((Арх3.3)) --> АБС1_ЦФТ:Арх3.3:software((software)) --> АБС1_ЦФТАрх3.3Среда_исполнения:_Oracle_JDK_:Ри2([Среда исполнения: Oracle JDK <br>17.0.11<br>Oracle Inc., 840]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> АБС1_ЦФТ(АБС1 ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС1_ЦФТ:Арх3.3((Арх3.3)) --> АБС1_ЦФТ:Арх3.3:software((software)) --> АБС1_ЦФТАрх3.3Системное_ПО,_ОС:_Ред_ОС_Сервер:Ри2([Системное ПО, ОС: Ред ОС Сервер<br>10.2<br>ООО «Ред Софт», 810]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> АБС1_ЦФТ(АБС1 ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС1_ЦФТ:Арх3.3((Арх3.3)) --> АБС1_ЦФТ:Арх3.3:hardware((hardware)) --> АБС1_ЦФТАрх3.3Оборудование,_сервер:_Aquarius_C86_:Ри2([Оборудование, сервер: Aquarius C86 <br>T1F S28H<br>ГК «Аквариус», 810]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> АБС1_ЦФТ(АБС1 ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС1_ЦФТ:Арх3.2((Арх3.2)) --> АБС1_ЦФТ:Арх3.2:software((software)) --> АБС1_ЦФТАрх3.2СУБД:_Postgres_Pro_Enterprise:Ри2([СУБД: Postgres Pro Enterprise<br>15.6.1<br>ООО «Постгрес Про», 810]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> АБС1_ЦФТ(АБС1 ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС1_ЦФТ:Арх3.2((Арх3.2)) --> АБС1_ЦФТ:Арх3.2:software((software)) --> АБС1_ЦФТАрх3.2Системное_ПО,_ОС:_Ред_ОС_Сервер:Ри2([Системное ПО, ОС: Ред ОС Сервер<br>10.2<br>ООО «Ред Софт», 810]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> АБС1_ЦФТ(АБС1 ЦФТ<br>Основная АБС банка, АО_ЦФТ) --> АБС1_ЦФТ:Арх3.2((Арх3.2)) --> АБС1_ЦФТ:Арх3.2:hardware((hardware)) --> АБС1_ЦФТАрх3.2Оборудование_сервера:_Aquarius_C86_:Ри2([Оборудование сервера: Aquarius C86 <br>T1F D88<br>ГК «Аквариус», 810]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> CRM(CRM<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM:Арх3.3((Арх3.3)) --> CRM:Арх3.3:software((software)) --> CRMАрх3.3Прикладное_ПО:_Creatio:Ри2([Прикладное ПО: Creatio<br>8.0.9<br>Creatio / Terrasoft, 840]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> CRM(CRM<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM:Арх3.3((Арх3.3)) --> CRM:Арх3.3:software((software)) --> CRMАрх3.3Среда_исполнения:_.NET:Ри2([Среда исполнения: .NET<br>8.0.6<br>Microsoft, 840]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> CRM(CRM<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM:Арх3.3((Арх3.3)) --> CRM:Арх3.3:software((software)) --> CRMАрх3.3Веб-сервер:_Internet_Information_Services,_IIS:Ри2([Веб-сервер: Internet Information Services, IIS<br>10.0<br>Microsoft, 840]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> CRM(CRM<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM:Арх3.3((Арх3.3)) --> CRM:Арх3.3:software((software)) --> CRMАрх3.3Системное_ПО,_ОС:_Microsoft_Windows_Server_2022:Ри2([Системное ПО, ОС: Microsoft Windows Server 2022<br>Standard<br>Microsoft, 840]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> CRM(CRM<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM:Арх3.3((Арх3.3)) --> CRM:Арх3.3:hardware((hardware)) --> CRMАрх3.3Оборудование_сервера:_Dell_PowerEdge:Ри2([Оборудование сервера: Dell PowerEdge<br>R760<br>Dell Inc., 840]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> CRM(CRM<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM:Арх3.2((Арх3.2)) --> CRM:Арх3.2:software((software)) --> CRMАрх3.2СУБД:_Microsoft_SQL_Server_2022:Ри2([СУБД: Microsoft SQL Server 2022<br>Enterprise Edition<br>Microsoft, 840]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> CRM(CRM<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM:Арх3.2((Арх3.2)) --> CRM:Арх3.2:software((software)) --> CRMАрх3.2Системное_ПО,_ОС:_Microsoft_Windows_Server_2022:Ри2([Системное ПО, ОС: Microsoft Windows Server 2022<br>Datacenter<br>Microsoft, 810]) 
+CRM --> АБС1_ЦФТ
+ТпрКО6 --> CRM(CRM<br>CRM ФЛ банка, Creatio / Terrasoft) --> CRM:Арх3.2((Арх3.2)) --> CRM:Арх3.2:hardware((hardware)) --> CRMАрх3.2Оборудование_сервера:_Dell_PowerEdge:Ри2([Оборудование сервера: Dell PowerEdge<br>R760xd<br>Dell Inc., 840]) 
+CRM --> АБС1_ЦФТ
 ```
 
 - [mermaid.live](https://mermaid.live/view#pako:eNrtWFtvG0UU_itH--RIzuJd39YLqhTsVBgaKHEkJDAaLd6JbcneNeM1aYkiNWl54qHh8lQkpymIF17cgpEhJZX6C2b_EWdmd32rndooqGlSRbFmds53fM53brPeVSquTRVTqTKrVYMbm2-XHf6IP_Pv8Ae8m4HV1WvAD_l3_Fgj_Ff-C38UC7cQbN_5gl3jXX-f_8NP-RP87Pn3QwTwx7yHT_7mvbh41A01rMzQavJD_47_TVJNxmLD5crZkmbb3fZ2LEZjsWg1EzEE8CN0a4D2nKBdf0iL-4Qf8a4ZSq4iTFosnqKQf-Df46cIeup_S_SN_BopvFs0-UM-0GOfzdIGUhtMaYMXtYHQBqhN8KerOTUpiUSSQnAcDC3x-QqUnfzmxgynLnOYjnkfHXsiPon0cYD0nfI_eR_NHPC_TLLWsio1SrbcZsXyhgEZw8FMHAQ4CHCCk5yaUI20WIVHpdBEuO52HNvy6q6DoUhd2VCgW33M7h7hAzT5GZp8ggZKQv37JvmIWZUGJe8XPiCjMEQYmImBAAOIAcGFlsUYaJpYhidFp6JeadIFb_4BMvZ0rEnFCe_yY2xVDwW7ckPGU36sDKbgsiuhbwIOAVxuYBwuQ5FQ9YAp8QfPf4uEj7Fv3fMPnp9corZUs5gdhCVavSQsXbQI27d_F3NbWNuTXaUfJ2j_KApk7cuOxeqdNskbmVFRzAPDBBgiMCBYVseWdh1KuvGeZOoH_kAE5RBJQQ2iwfl3_f0LHxV9FBX97KjoyxaLjqn5Mx78aJKbbturMtomN5lL1h2Pshart-lYWQSCEAkCCsJIUBZAWs2o2mQJHGHcRDn9Ltqavw9y7p9eddLfdKj_PyxLdih9XpOZaFC8t2SLgin07B5VMIxzblEoF8N_oVVAUOinCcbzjIrrGbwFW5QxS2TuSgQ8ayBMHM9PfRRb5MUhtGKBl4JQUvhj4I0nJx170YflLz4XiaiX3RfVD9e3Fr4oCuGIroxYbNQrzH39SfoeXXy8OnlrKIo55FAPF9sua8oXD1Ki7Kt6hbbjpFgsDWmbAYcIDmNwGMIB4WH3TFwiHs-eQkMnySd1x3Z32pJOyoie0PUFR9FQB4Q6INABQofgoORZ-JbI7NeC1bnzZILVRYdIgTYaeOnaoWzdrtKlp4iAwxAuPN_MZmR2ypP_9g54LjzOGNETxwtl59jFdJSIpY9vzEnC8Go6yjcUnc610VUV1u26qPCLkHXnxtYrr-WC5VkVKkie5lW7iLwuUs36q63mW_ZS9azElSqr24rpsQ6NK02Kg0xsld2yA1BWvBpt0rJi4tKm21an4ZWVsrOHsJblfOq6zQjJ3E61ppjbVqONu07LtjxaqFtVZo1EqGNTlnc7jqeYaalBMXeVW7jJZdSMjjHPadkUfsaV24qJk9MwtFw2rSW0ZDKTS6b24srX8is1VU_quXQiY2RTCSOVyibjCsX6dNlG8NO6_IV971_htYS_)
