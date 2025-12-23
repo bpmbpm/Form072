@@ -9,5 +9,8 @@
 Данные взяты из https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/f072/server.md 
 
 #### Example 1
-
 https://bpmbpm.github.io/Form072/
+
+### Tech
+#### github mermaid 
+- [Рисуем диаграммы Mermaid.js в README-файлах GitHub](https://habr.com/ru/articles/652867/)
