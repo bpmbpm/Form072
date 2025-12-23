@@ -11,4 +11,5 @@ form072_v1.html
             }
         };
 ```
-При выборе File есть примеры: f072r7v1.txt и f072r7v3.txt (более сложный), см. https://github.com/bpmbpm/Form072/tree/main/example
+При выборе File (inData: 'File') есть примеры: f072r7v1.txt и f072r7v3.txt (более сложный), см. https://github.com/bpmbpm/Form072/tree/main/example
+При выборе outData: 'mermaid.live', открывается граф в https://mermaid.live/view с редактором: https://mermaid.live/edit
