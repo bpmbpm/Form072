@@ -44,7 +44,7 @@ sysSourceTarget: 'no'
 - [edit]
                 
 ### 1.3 TprKO6, link
-Процесс ТпрКО6 - с взаимосвязью систем (АС), т.е. sysSourceTarget: 'yes' 
+Процесс ТпрКО6 - с взаимосвязью систем (АС, т.е. CRM --> АБС1), т.е. sysSourceTarget: 'yes' 
 
 ``` mermaid
 graph LR;
