@@ -3,6 +3,7 @@
 Форма 0409072 — «Сведения о показателях операционной надёжности кредитной организации и применяемых ею информационных технологиях при осуществлении банковской деятельности и деятельности в сфере финансовых рынков»
 #### github.io
 - https://bpmbpm.github.io/Form072/blob/main/ver1/form072_v1.html
+- https://bpmbpm.github.io/Form072/ver1/form072_v1.html
 
 ### Нормативные документы:
 - https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/nd.md
