@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Замена скобок на _, удаление кавычек</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input[type="file"] {
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .message {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 4px;
+      display: none;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Обработка файла: скобки → _, кавычки → удалены</h1>
+    <label for="fileInput">Выберите файл:</label>
+    <input type="file" id="fileInput" accept=".txt,.csv,.log,.md,.html,.css,.js,.json">
+    <button id="processButton">Обработать файл</button>
+    <div id="message" class="message"></div>
+  </div>
+
+  <script>
+    document.getElementById('processButton').addEventListener('click', async () => {
+      const fileInput = document.getElementById('fileInput');
+      const messageEl = document.getElementById('message');
+
+      // Проверяем, выбран ли файл
+      if (!fileInput.files.length) {
+        showMessage('Пожалуйста, выберите файл.', 'error');
+        return;
+      }
+
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+
+      try {
+        // Читаем файл как текст
+        reader.onload = () => {
+          const content = reader.result;
+
+          // Регулярное выражение:
+          // - кавычки (все виды) → удаляем (заменяем на пустую строку)
+          // - скобки → заменяем на _
+          const regexQuotes = /['"«»„‟❛❜❝❞〝〞⹂]/g;
+          const regexBrackets = /[\(\)\[\]\{\}\<\>]/g;
+
+          let modifiedContent = content.replace(regexQuotes, '');      // удаляем кавычки
+          modifiedContent = modifiedContent.replace(regexBrackets, '_'); // заменяем скобки на _
+
+          // Формируем новое имя файла: добавляем _ перед расширением
+          const originalName = file.name;
+          const ext = '.' + originalName.split('.').pop();
+          const nameWithoutExt = originalName.slice(0, originalName.length - ext.length);
+          const newFileName = nameWithoutExt + '_' + ext;
+
+          // Создаём Blob для скачивания
+          const blob = new Blob([modifiedContent], { type: 'text/plain' });
+          const url = URL.createObjectURL(blob);
+
+          // Создаём ссылку для скачивания
+          const a = document.createElement('a');
+          a.style.display = 'none';
+          a.href = url;
+          a.download = newFileName;
+          document.body.appendChild(a);
+          a.click();
+
+          // Очищаем
+          URL.revokeObjectURL(url);
+          document.body.removeChild(a);
+
+          showMessage(`Файл обработан! Скачан как: ${newFileName}`, 'success');
+        };
+
+        reader.onerror = () => {
+          showMessage('Ошибка при чтении файла.', 'error');
+        };
+
+        reader.readAsText(file, 'utf-8');
+
+      } catch (err) {
+        showMessage('Произошла ошибка: ' + err.message, 'error');
+      }
+    });
+
+    // Функция для вывода сообщений
+    function showMessage(text, type) {
+      messageEl.textContent = text;
+      messageEl.className = `message ${type}`;
+      messageEl.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
