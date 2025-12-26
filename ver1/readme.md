@@ -21,3 +21,8 @@ DATASET_072v1 содержит 8 строк (8 CI); DATASET_072v2 - 16 стро�
 - При выборе outData: 'mermaid.live', открывается граф в https://mermaid.live/view с редактором: https://mermaid.live/edit
 
 Файл f072r7v2ai.txt - как (неудачная) демонстрация от [архитекторши Алиса-ИИ](https://github.com/bpmbpm/Form072/wiki/example-form#2-%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B8-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%BE%D0%BF%D0%B8%D1%81%D1%8B%D0%B2%D0%B0%D1%8E%D1%89%D0%B8%D0%B9-%D0%B2%D1%81%D1%8E-%D0%B8%D1%82-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83-%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0-%D0%BA%D0%B0%D0%BA-%D0%BC%D0%B8%D0%BD%D0%B8%D0%BC%D1%83%D0%BC-30-%D1%81%D1%82%D1%80%D0%BE%D0%BA)
+
+### mermaid.live
+При настройке:  
+outData: 'mermaid.live',  
+в окне "https://mermaid.live/view" можно включить режим edit заменой в адресной строке на "https://mermaid.live/edit" 
