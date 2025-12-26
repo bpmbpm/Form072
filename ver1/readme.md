@@ -14,7 +14,7 @@ form072_v1.html
             }
         };
 ```
-DATASET_072v1 8 строк (8 CI); DATASET_072v2 16 строк; DATASET_072v3 40 строк;   
+DATASET_072v1 содержит 8 строк (8 CI); DATASET_072v2 - 16 строк; DATASET_072v3 - 40 строк.   
 
 Опции:
 - При выборе File (inData: 'File') есть примеры: f072r7v1.txt (8 строк) и f072r7v3.txt (более сложный), см. https://github.com/bpmbpm/Form072/tree/main/example
