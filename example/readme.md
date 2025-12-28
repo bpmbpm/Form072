@@ -302,6 +302,13 @@ CRM_ЮЛ -. target .-> Кредиты_ЮЛ
 ## 3 big
 ### 3.1 three processes 
 file f072r7v4.txt
+```
+                inData: 'File',            // 'File' или 'DataSet'. File - предложить открыть файл, а DataSet - брать из перенной DataSetRef: 'DATASET_072',
+                outData: 'mermaid.live',   // 'mermaid.live' или 'text'
+                DataSetRef: 'DATASET_072v3',// имя глобальной переменной с данными
+                sysSourceTarget: 'no'  
+```                
+ТП:
 - ТпрКО6 = АБС ЦФТ + CRM ФЛ
 - ТпрКО7 = АБС ЦФТ + CRM ЮЛ
 - ТпрКО3 = CRM ЮЛ + Кредиты ЮЛ (кред. конв.) + АБС ЦФТ  
