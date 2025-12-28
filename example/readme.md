@@ -301,13 +301,14 @@ CRM_ЮЛ -. target .-> Кредиты_ЮЛ
 ---
 ## 3 big
 ### 3.1 three processes 
-#### file f072r7v4.txt
+#### 3.1.1 file f072r7v4.txt
 ```
                 inData: 'File',            // 'File' или 'DataSet'. File - предложить открыть файл, а DataSet - брать из перенной DataSetRef: 'DATASET_072',
                 outData: 'mermaid.live',   // 'mermaid.live' или 'text'
                 sysSourceTarget: 'no'  
-```                
-ТП:
+```
+DataSetRef: 'DATASET_072vXX', - не включено в html файл.                    
+Структура ТП:
 - ТпрКО6 = АБС ЦФТ + CRM ФЛ
 - ТпрКО7 = АБС ЦФТ + CRM ЮЛ
 - ТпрКО3 = CRM ЮЛ + Кредиты ЮЛ (кред. конв.) + АБС ЦФТ  
@@ -315,3 +316,17 @@ CRM_ЮЛ -. target .-> Кредиты_ЮЛ
 
 [mermaid.live](https://mermaid.live/view#pako:eNrtXFFv4kYQ_isrPxEJLLABg1udlEuomja0aYhUqaVaubAhSGDTxTR3jSJd0_YpD3et-nSVcpdr1UfEnZqK9O5yf2H9jzprYyAEOIMgYOIXsmvmW2Y_z8yOx6McCQWjSARVKFGtdoC2dz_I6-wFe2c9Yk_ZWRJFIvcQe8J-ZeeY_c3-Yi9Czgw5sw-_pffYmfUje8uu2Cv4bFmPkSvxkrXgyn-sFUaFfXPt5loqe2I9sn6RRTkU6g7XxgqqdWPfPNQoCYXc0TBAV549g520QYnXoMw_tpoXmD1jZ2pHMgIoW01-FYSsE-tndgWgN9YplrIb63jz_pbKnrO2FPp62GrIXg0NrIZurob4aghW46RJYlqU-QCYCaNULPrNGlox5s_ZBezlFf_E9rbawMgV-5ddgG5tdqni9ZpWOCB4z6gWNLPLcR8ODcUhB4ccHCciLUbFVIKPnK-A0fgqMgo7uQC7a2HWBj3fgZ6vQSubF-uxij-nWqFC8Cebn-Iemy4GDcUgB4MAgzgBMQWojMX40PlmVankbFgnwMObvqAQxuyMnUNoeM45sye43x77bHQAbkeBMLLhyIHbE9QPtwmOihL_S0kxwlX1ifMfaLTo8OuOxvN7BmpA3LN-AtPjKrZs370IY1C6Ryde_66h0XKjjjdSyZ7NjgKja2DkghGAbePdi32EclLqYzsQdL5cJL9Sj19pLL_ShPYrgVX9Cdd_V_GOUTdLlNTxDjVwRjcJrdFynfRZqiOIXEEEgqgnaNtkQkyKts_XOkI1aqwscYHjT8LvZI4vjfLda37PWhN6PhpAD3f9zVTKm-dv7GYxaP1HCAaIDzjMHV_jcYMSzSwba9dg4-LnTZnRFurKeklWO4p4SEQ7knxLKTjL0_benGujz_KlZeR9KY_4WWbPc67DhV1eknyQLReo0XFGvzHzG-zrZeT6cbrFw7pOTBjsG7TK1dFxjtDvywVSD-OtrVyXqyFw5MJRHxx14QjgnUAW9Tt540-B7s7wl2W9aBzWbQ4JxVJUkjweBd01UGcN5KyB-Bqchpyp6UUIqUtJ5ciof5NKrwF_k1QqkK0cEpoplsjEEZ_DURfON7-rJG075N_Mn7chR-ZNGe8m2JfB9awt98X2CEvr5HA9owLRQYPq5XQoUyxz371l05oDRQv30k3N1AqEMztIZmwZyPTsp9Ji_fRBcZynyj2Vmy5zzT7mmu9lrukhwjUnOCyaC87KlpyRBWZlS87Mcmdly25WPsrKFkHl-Gjf9EVWNlveRp2SzQlSjuayZWVLT5GfsrJFkOnZT32QlbGnneO7bZ1Ypw6J1691-ey_zN5ap-wSAadXoBLowS6dF3qDfGcqVW1t1C-NfVMxTnxMWfgmzEuml9nOruP7O1mca5RNMqzQPjr341gEWGRjB2rvcVES4exO2G8vueRoI75Tt8JLiok3DErwbkM3y1UyUb6JOBJ1kJMmn3fqPvghob1bjuG7JNmnt2f0m69xt2fJE-_luBfD3j-OE5_KVZYpmb9jtPvvAcGnN2iaGOWHh46g4_TWO07loON0xh2nctBxOquOUznoOJ1r45kcdJzOteNUDjpOp-s4lYOO05Vw_DvbcaoEvQ3-YmSBvQ1K0NswfSlYCXobZlW2VYLehqlKrErQ2-DNtIL6zu3Xd5SgvjPj-o4S1HdmVd9RgvrOXB_zlKC-M9f6jhLUd6ar7yhBfWclHP9O1XeEsFCi5aKgmrRBwkKVwJMrnwpHeR2hvGAekCrJCyoMi2Rfa1TMvJDXjwFW0_SvDKPqIqnRKB0I6r5WqcOsUStqJtksayWqdUW0hmnkHuoFd04g0TZo1vmnPfb_7oFliF4kdMNo6KagxmKS_TuCeiQ84FMxmVZScSmlKFI8rkSVsPBQUCPJaEqMwUcykYqnlLSkHIeFH2zVJFFRQE6W07IiJZTE8f8ePaK_)
 Обратить внимание, что узлы к hardware у АБС ЦФТ имеют по ТРИ связи, т.к. она входит в три ТП. 
+
+#### 3.1.2 file f072r7v5.txt
+```
+                inData: 'File',            // 'File' или 'DataSet'. File - предложить открыть файл, а DataSet - брать из перенной DataSetRef: 'DATASET_072',
+                outData: 'mermaid.live',   // 'mermaid.live' или 'text'
+                sysSourceTarget: 'no'  
+```
+DataSetRef: 'DATASET_072vXX', - не включено в html файл.                    
+Структура ТП:
+- ТпрКО6 = АБС ЦФТ + CRM ФЛ
+- ТпрКО7 = АБС ЦФТ + CRM ЮЛ
+- ТпрКО3 = CRM ЮЛ + Кредиты ЮЛ (кред. конв.) + АБС ЦФТ + **Кредиты ФЛ**
+
+[mermaid.live]   
