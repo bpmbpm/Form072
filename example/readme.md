@@ -305,7 +305,6 @@ file f072r7v4.txt
 ```
                 inData: 'File',            // 'File' или 'DataSet'. File - предложить открыть файл, а DataSet - брать из перенной DataSetRef: 'DATASET_072',
                 outData: 'mermaid.live',   // 'mermaid.live' или 'text'
-                DataSetRef: 'DATASET_072v3',// имя глобальной переменной с данными
                 sysSourceTarget: 'no'  
 ```                
 ТП:
