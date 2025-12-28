@@ -1,5 +1,7 @@
 ## Example 
 ## 1 Easy
+файлы см.: 
+- https://github.com/bpmbpm/Form072/tree/main/ver1  
 Особенности: 
 - Данные взяты из https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/f072/server.md  
 - Упрощено, включая, минимазацию компонентов, отказ от виртуализациии и т.п.
