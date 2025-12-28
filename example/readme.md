@@ -113,8 +113,8 @@ CRM --> АБС1_ЦФТ
 - в логическом формате "арх-записи" убрать дублирование
 - в физическом формате "арх-записи" заменить "велосипед" из CSV (Comma-Separated Value) c разделителем "|" на какой-либо более "человеческий" формат типа JSON \ YAML, а еще лучше RDF. 
 
-## 2 TprKO6 + TprKO3 
-Добавим простой вариант **ТПрКО3** Технологический процесс, обеспечивающий размещение привлеченных во вклады денежных средств физических и (или) юридических лиц от своего имени и за свой счет  
+## 2 Medium, two processes: TprKO6 + TprKO3 
+Добавим в простой вариант (TprKO6) второй процесс **ТПрКО3** Технологический процесс, обеспечивающий размещение привлеченных во вклады денежных средств физических и (или) юридических лиц от своего имени и за свой счет  
 в виде кредитного конвеера ЮЛ и CRM ЮЛ
 ### 2.1 TprKO6 + TprKO3, no link
 TprKO6 = CRM ФЛ + АБС
@@ -293,3 +293,14 @@ CRM_ЮЛ -. target .-> Кредиты_ЮЛ
 - Если мы хотим добавить Типовое рабочее место Сотрудника банка с установленным на нем "клиентской частью" CRM, АБС, то нам нужно отдельными строчками (арх-строками) добавлять его в Каждую АС (например, в трехзвенной архитектуре как Арх3.1 - браузер, системное ПО, оборудование ПК) 
 - Если бы ТП можно было перечислять в первой позиции, то это резко сократило бы избыточность.
 - Системы источники и системы приемники - в большинстве случаев одни и те же. Без указания типа данных (что передается) - смысл в этих связях - минимален, т.к. они двухстороние и без указания что же (какие сущности) передается 
+
+## big
+###  
+file f072r7v4.txt
+- ТпрКО6 = АБС ЦФТ + CRM ФЛ
+- ТпрКО7 = АБС ЦФТ + CRM ЮЛ
+- ТпрКО3 = CRM ЮЛ + Кредиты ЮЛ (кред. конв.) + АБС ЦФТ  
+Также приведена в соответсвие с 18-МР подпись разработчика (доменное имя второго уровня)
+
+[mermaid.live](https://mermaid.live/view#pako:eNrtW99v2lYU_leu_EQksMAuGLypUgpMyxa2LESatDFdeXBDkMBmF7O0iyJ12faUh3bTnjopbbppj4hWy0TWNv0Xrv-jnWtjfkNNlBQ78Qu5ts93OffzOed-2CcHQtmoEEEVqlRr7qHN7Q9KOnvO3loP2RN2kkKx2F3EHrNf2Slmf7O_2POIc4Scow-_pXfZifUje8Mu2Ev47FqPkGvxgnXhzH-sG0XlXXNtei6VPbYeWr_IohyJDIZrCw3VlrFr7muURCLuaBZgYM-ewkp64MQrcOYf280zzJ6yE7VvGQOU7SY_C0bWkfUzuwDQa-sYS4XsOs7d21DZM9aTIl_Pmg3Zs6GJ2dD0bIjPhmA2TpokZkSZD4CZKEon4t-soRvG_Ck7g7W85J_YXlYPGLlg_7Iz8K3HzlW83tTKewTvGI2yZg44HsGhmTjk4JCD40RkxLiYTvKRcwkYvXMTGYWVnEHcdTHrgZ9vwc9X4JXNi_VIxZ9TrVwn-JPcp3jIpotBMzHIwSDAIE5AQgEqEwk-dK7cVCo5G9YR8PB6pChEMTthp1AannHO7AM8Go8jMToBt6tAFNlw5MDtAzQKtwmOixL_S0klxl0NSPLvabTi8OuOFvN7Am5A3bN-gtDjLnbt3D2LYnB6SCde_66t0Vq7hbPp1DBm54HRGBi5YARgO3h3Eh-hopT-2C4E_Yur5Fca8ist5FdaMn4liKo_4fzvKt4yWmaVkhbeogbO6yahTVprkZFIdQyRa4jAEA0N7ZhMiinRzvlm36hJjRtLXJj4y_C7XOJL83J3LO9Zd8nMRxPo2amfS6e9ZX52u4DB6z8iMEB8wGHueIzHLCWaWTPWxmCL6ue0zfwIdW29iNW-Ix6EaN-SLykNe3nGXptzbv5e7ltG3iV5xM_yO561Djd2eUnxQaFWpkY_GYPGzG-wrhex8e10g5d1nZgw2DVog7uj4yKh39fKpBXFGxvFAVcz4MiFoxE4GsARwPuFLB508hbvAoOV4S9resXYb9kcEoqluCR53AoGc6D-HMiZA_E5OA1FU9MrUFJ9SeXcqj9NpdeCnyP1OqiVfULzlSpZuuJzOBrA-eK3lZQdh_zK9fM2Y8uctvEegiMKbhhtxS8250RaX8MNgwpMJwNqqOlQvlLjufueQ-saKFp5luY0UysTzuwkmQk_kOk5T6XV5un9yqJMlYcud1zmOiPMdd7JXMdDhesssVl0VqzKfM7IClWZz5nxtyrze1gFSJWtgsrF1b4TCFV2tbzN2yU7S0iOjt9Ume8pCpIqWwWZnvM0AKqMPelv3z3ryDp2SBw_N-Bz9DR7Yx2zcwScXoBL4Ac7d17oTfKdrze0tXnftPBNxSLzBY-Fp2FelF5-s7CO720VcLFdM8msB-3ztR_HIsAiGzvx7P2OKImwdyftt5fccn4Q36pb4UVi4qxBCd5u62atQZbSm4gjUR-5rPi8VfchCIL2diVG4ERyQG_P_Ddfi26Pz4W3P-7FrPePi8wvlSp-EvO3jPbg_UAI6A26TI0Kwo-OsOP0vXecymHH6RV3nMphx-lVdZzKYcfptTaeyWHH6bV2nMphx-nlOk7lsOP0RiT-re04VcLehmAxssLeBiXsbbj8o2Al7G24qse2StjbcKlHrErY2zArtISoUKW1iqCatE2iQoNAovND4aCkI1QSzD3SICVBhWGF7GrtulkSSvohwJqa_pVhNFwkNdrVPUHd1eotOGo3K5pJcjWtSrWBidY2jeIDveweE_DLoAXnf5ztf3WGaYheITRrtHVTUJVU0v4eQT0Q7gtqIg26NK7ElaSUljNpKaNEhQeCGktIiZSYyaSVuJTMJBNw6TAq_GD7JonJVEaJJ-RUOhmPx1Mp5fB_PgfU6g)
+Обратить внимание, что узлы к hardware у АБС ЦФТ имеют по две связи, т.к. 
