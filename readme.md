@@ -12,13 +12,13 @@
 ### github.io
 - https://bpmbpm.github.io/Form072/ver1/form072_v1.html Разрешить всплывающее окно
 
-### info & Нормативные документы:
+## info & Нормативные документы:
 - https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/nd.md ; https://github.com/bpmbpm/doc/blob/main/IT/reliability_risk/risk/850P/f072/
 - [Порядок составления и представления отчетности по форме 0409072](https://ivo.garant.ru/#/document/406750235/entry/10006/doclist/1821/1/0/0/6406-%D0%A3:0)
 
-#### run
+## run
 см. https://github.com/bpmbpm/Form072/tree/main/ver1
 
-### Tech
+## Tech
 #### github mermaid 
 - [Рисуем диаграммы Mermaid.js в README-файлах GitHub](https://habr.com/ru/articles/652867/)
